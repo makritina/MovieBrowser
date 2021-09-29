@@ -1,0 +1,90 @@
+$primary: #ed6666;
+$dark: #121212;
+$danger: #770102;
+$warning: #121212;
+
+#navbarcustom{
+  background-color: #0B0102;
+}
+
+.navbar a{
+  color:white;
+}
+.navbar a:hover{
+  color:#8b0f15;
+}
+.navbar a:active{
+  color:#e42d35 !important;
+}
+
+.custombg{
+  background-color: #000000;
+}
+
+//hero
+.herocustom{
+  background-color: #770102;
+}
+
+.hero-container{
+  position: relative;
+  z-index: 100;
+}
+
+.hero-text{
+  position: relative;
+  z-index: 200;
+
+}
+
+
+.hero-backdrop{
+  position: absolute;
+  top:0;
+  left:0;
+width: 100%;
+height: 100%;
+background-size: cover;
+background-position: center center;
+opacity: 0.4;
+  }
+
+
+.customecontainer{
+  height: 430px;
+}
+
+
+
+
+  footer #footerc {
+    background-color: #770102;
+     position:relative;
+     bottom:0;
+     width:100%;
+
+  }
+
+//footer links
+footer.footer .social-link {
+  margin-right: 20px;
+  margin-left: 20px;
+  display: block;
+  text-decoration: none;
+  height: 3.5rem;
+  width: 3.5rem;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  background-color: #770102;
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+
+}
+footer.footer .social-link:hover {
+  background-color: #410b13;
+  text-decoration: none;
+
+}
+
+//
+@import "../../node_modules/bootstrap/scss/bootstrap";
