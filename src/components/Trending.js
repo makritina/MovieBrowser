@@ -9,15 +9,17 @@ const TrendingCard = ({ trending}) => {
   const trendDetailUrl = `/movies/${trending.id}`
 
   return(
-    <div className= "col-lg-4 col-md-4 col-sm-6 mt-3">
-  <div className="card text-center  mb-5 border border-warning" >
-  <img src={trendPosterUrl} class="card-img-top" alt={trending.original_title}/>
-<div className="card-body h-100 bg-warning">
+    
+    <div className= "col-lg-3 col-md-4 col-sm-6 mt-3 d-flex align-items-stretch" >
+  <div className="card text-center  mb-5 border border-warning"  >
+  <img src={trendPosterUrl} class="img-fluid" alt={trending.original_title}/>
+<div className="card-body h-100 bg-warning" >
     <h5 className="card-title">{trending.original_title}</h5>
   <Link to={trendDetailUrl} class="btn btn-danger">Show details</Link>
   </div>
 </div>
 </div>
+
 )
 }
 
@@ -47,7 +49,7 @@ const TrendingView = (data) => {
           <div className="row">{trendingHtml}</div>
         </div>
       )}
-      <Footer/>
+      
     </div>
   );
 };

@@ -8,7 +8,7 @@ const MovieCard = ({ movie}) => {
   const detailUrl = `/movies/${movie.id}`
 
   return(
-    <div className= "col-lg-4 col-md-3 col-2 mt-3 mb-3 text-center ">
+    <div className= "col-lg-4 col-md-3 col-2 mt-3 mb-3 text-center d-flex align-items-stretch">
   <div className="card h-100 border border-warning "  >
   <img src={posterUrl} class="card-img-top" alt={movie.original_title}/>
   <div className="card-body text-white bg-warning ">

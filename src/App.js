@@ -1,7 +1,6 @@
-import './sass/main.min.css';
+import './sass/main.scss';
 import {useState, useEffect } from 'react'
 import Navbar from './components/Navbar.js'
-import HomeView from './components/HomeView.js'
 import Trending from './components/Trending.js'
 import TopRated from './components/TopRated.js'
 import SearchView from './components/SearchView'
@@ -34,9 +33,6 @@ useEffect(() => {
 
     <Navbar searchText={searchText} setSearchText={setSearchText}/>
     <Switch>
-    <Route path="/" exact>
-<HomeView/>
-</Route>
 <Route path="/trending" component={Trending}/>
 <Route path="/search">
 <SearchView keyword={searchText} searchResults={searchResults}/>

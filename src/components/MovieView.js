@@ -28,7 +28,7 @@ function renderMovieDetails() {
     const backdropUrl =`https://image.tmdb.org/t/p/original${movieDetails.backdrop_path}`
 
  return (
-   <div className="custombg">
+   <div className="custombg vh-100">
   <Hero text={movieDetails.original_title} backdrop={backdropUrl} />
 <div className="container my-5 text-white ">
   <div className="row">
@@ -50,7 +50,7 @@ function renderMovieDetails() {
   </div>
 
    </div>
-   <Footer/>
+   
 </div>
 
  )

@@ -9,7 +9,7 @@ const TopRatedCard = ({ topRated }) => {
   const topRatedDetailUrl = `/movies/${topRated.id}`
 
   return(
-    <div className= "col-lg-4 col-md-4 col-sm-6 mt-3">
+    <div className= "col-lg-4 col-md-4 col-sm-6 mt-3 d-flex align-items-stretch">
   <div className="card text-center  mb-5 border border-warning" >
   <img src={topRatedPosterUrl} class="card-img-top" alt={topRated.original_title}/>
 <div className="card-body h-100 bg-warning">
@@ -50,7 +50,7 @@ const TopRatedView = (data) => {
           <div className="row">{topRatedHtml}</div>
         </div>
       )}
-      <Footer/>
+      
     </div>
   );
 
