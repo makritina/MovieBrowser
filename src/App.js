@@ -33,7 +33,8 @@ useEffect(() => {
 
     <Navbar searchText={searchText} setSearchText={setSearchText}/>
     <Switch>
-<Route path="/trending" component={Trending}/>
+    
+<Route path="/" exact component={Trending}/>
 <Route path="/search">
 <SearchView keyword={searchText} searchResults={searchResults}/>
 </Route>
